@@ -173,9 +173,9 @@ public class LegacyItemDb extends AbstractItemDb {
         }
 
         final ItemData data = legacyIds.get(itemid);
-        if (data == null) {
+        /*if (data == null) {
             throw new Exception(tl("unknownItemId", itemid));
-        }
+        }*/
 
         final Material mat = getFromLegacy(itemid, (byte) metaData);
         ItemStack retval = new ItemStack(mat);
